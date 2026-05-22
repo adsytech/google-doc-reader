@@ -34,7 +34,7 @@ final class GoogleDocHtmlFetcher
         [$statusCode, $body] = self::performRequestWithRetry($url);
 
         if ($statusCode >= 400) {
-            throw new InvalidArgumentException(self::buildGoogleDocsHttpErrorMessage($statusCode));
+            throw new RuntimeException(self::buildGoogleDocsHttpErrorMessage($statusCode));
         }
 
         if (trim($body) === '') {
