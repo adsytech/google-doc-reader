@@ -2,6 +2,7 @@
 
 namespace Heorhiev\GoogleDocReader\Support;
 
+use Heorhiev\GoogleDocReader\Exception\ClientErrorException;
 use InvalidArgumentException;
 use RuntimeException;
 
@@ -28,13 +29,17 @@ final class GoogleDocHtmlFetcher
         return $matches[1];
     }
 
+    /**
+     * @throws ClientErrorException
+     * @throws \Throwable
+     */
     public static function fetchByDocumentId(string $documentId): string
     {
         $url = sprintf('https://docs.google.com/document/d/%s/export?format=html', rawurlencode($documentId));
         [$statusCode, $body] = self::performRequestWithRetry($url);
 
         if ($statusCode >= 400) {
-            throw new RuntimeException(self::buildGoogleDocsHttpErrorMessage($statusCode));
+            throw new ClientErrorException(self::buildGoogleDocsHttpErrorMessage($statusCode), $statusCode);
         }
 
         if (trim($body) === '') {
