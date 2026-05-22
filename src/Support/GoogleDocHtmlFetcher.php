@@ -34,7 +34,7 @@ final class GoogleDocHtmlFetcher
         [$statusCode, $body] = self::performRequestWithRetry($url);
 
         if ($statusCode >= 400) {
-            throw new RuntimeException(self::buildGoogleDocsHttpErrorMessage($statusCode));
+            throw new InvalidArgumentException(self::buildGoogleDocsHttpErrorMessage($statusCode));
         }
 
         if (trim($body) === '') {
@@ -116,7 +116,7 @@ final class GoogleDocHtmlFetcher
     private static function buildGoogleDocsHttpErrorMessage(int $statusCode): string
     {
         return match ($statusCode) {
-            403 => 'Google Docs denied access. Make sure the document is shared so it can be exported.',
+            401, 403 => 'Google Docs denied access. Make sure the document is shared so it can be exported.',
             404 => 'Google Docs document was not found. Check the document URL.',
             500, 502, 503, 504 => 'Google Docs export is temporarily unavailable. Try again in a moment.',
             default => sprintf('Google Docs returned HTTP %d.', $statusCode),
