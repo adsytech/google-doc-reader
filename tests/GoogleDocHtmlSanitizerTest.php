@@ -1,8 +1,8 @@
 <?php
 
-namespace adsytech\GoogleDocReader\Tests;
+namespace Adsytech\GoogleDocReader\Tests;
 
-use adsytech\GoogleDocReader\Support\GoogleDocHtmlSanitizer;
+use Adsytech\GoogleDocReader\Support\GoogleDocHtmlSanitizer;
 use PHPUnit\Framework\TestCase;
 
 final class GoogleDocHtmlSanitizerTest extends TestCase

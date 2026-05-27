@@ -1,8 +1,8 @@
 <?php
 
-namespace adsytech\GoogleDocReader\Tests;
+namespace Adsytech\GoogleDocReader\Tests;
 
-use adsytech\GoogleDocReader\Support\GoogleDocHtmlFetcher;
+use Adsytech\GoogleDocReader\Support\GoogleDocHtmlFetcher;
 use InvalidArgumentException;
 use PHPUnit\Framework\TestCase;
 

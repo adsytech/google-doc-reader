@@ -29,7 +29,7 @@ composer update adsytech/google-doc-reader
 ## Usage
 
 ```php
-use adsytech\GoogleDocReader\GoogleDocReader;
+use Adsytech\GoogleDocReader\GoogleDocReader;
 
 $result = GoogleDocReader::readFromUrl($googleDocUrl);
 

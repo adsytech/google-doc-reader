@@ -1,10 +1,10 @@
 <?php
 
-namespace adsytech\GoogleDocReader;
+namespace Adsytech\GoogleDocReader;
 
-use adsytech\GoogleDocReader\Dto\GoogleDocReadResult;
-use adsytech\GoogleDocReader\Support\GoogleDocHtmlFetcher;
-use adsytech\GoogleDocReader\Support\GoogleDocHtmlSanitizer;
+use Adsytech\GoogleDocReader\Dto\GoogleDocReadResult;
+use Adsytech\GoogleDocReader\Support\GoogleDocHtmlFetcher;
+use Adsytech\GoogleDocReader\Support\GoogleDocHtmlSanitizer;
 
 final class GoogleDocReader
 {

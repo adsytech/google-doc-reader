@@ -1,12 +1,12 @@
 <?php
 
-namespace adsytech\GoogleDocReader\Support;
+namespace Adsytech\GoogleDocReader\Support;
 
 use DOMDocument;
 use DOMElement;
 use DOMNode;
 use DOMXPath;
-use adsytech\GoogleDocReader\Dto\GoogleDocReadResult;
+use Adsytech\GoogleDocReader\Dto\GoogleDocReadResult;
 use RuntimeException;
 
 final class GoogleDocHtmlSanitizer

@@ -1,8 +1,8 @@
 <?php
 
-namespace adsytech\GoogleDocReader\Support;
+namespace Adsytech\GoogleDocReader\Support;
 
-use adsytech\GoogleDocReader\Exception\ClientErrorException;
+use Adsytech\GoogleDocReader\Exception\ClientErrorException;
 use InvalidArgumentException;
 use RuntimeException;
 

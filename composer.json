@@ -1,5 +1,5 @@
 {
-  "name": "adsytech/google-doc-reader",
+  "name": "Adsytech/google-doc-reader",
   "description": "Google Docs HTML reader and sanitizer.",
   "type": "library",
   "license": "proprietary",
@@ -19,12 +19,12 @@
   },
   "autoload": {
     "psr-4": {
-      "adsytech\\GoogleDocReader\\": "src/"
+      "Adsytech\\GoogleDocReader\\": "src/"
     }
   },
   "autoload-dev": {
     "psr-4": {
-      "adsytech\\GoogleDocReader\\Tests\\": "tests/"
+      "Adsytech\\GoogleDocReader\\Tests\\": "tests/"
     }
   },
   "scripts": {
