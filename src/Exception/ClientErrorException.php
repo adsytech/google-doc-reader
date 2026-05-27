@@ -1,6 +1,6 @@
 <?php
 
-namespace Heorhiev\GoogleDocReader\Exception;
+namespace adsytech\GoogleDocReader\Exception;
 
 
 class ClientErrorException extends \Exception

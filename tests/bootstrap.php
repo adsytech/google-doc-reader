@@ -1,6 +1,6 @@
 <?php
 
-use Heorhiev\GoogleDocReader\GoogleDocReader;
+use adsytech\GoogleDocReader\GoogleDocReader;
 
 $autoloadPaths = [
     dirname(__DIR__) . '/vendor/autoload.php',

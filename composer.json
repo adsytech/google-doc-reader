@@ -1,11 +1,11 @@
 {
-  "name": "heorhiev/google-doc-reader",
+  "name": "adsytech/google-doc-reader",
   "description": "Google Docs HTML reader and sanitizer.",
   "type": "library",
   "license": "proprietary",
   "authors": [
     {
-      "name": "Ruslan"
+      "name": "Adsytech"
     }
   ],
   "require": {
@@ -19,12 +19,12 @@
   },
   "autoload": {
     "psr-4": {
-      "Heorhiev\\GoogleDocReader\\": "src/"
+      "adsytech\\GoogleDocReader\\": "src/"
     }
   },
   "autoload-dev": {
     "psr-4": {
-      "Heorhiev\\GoogleDocReader\\Tests\\": "tests/"
+      "adsytech\\GoogleDocReader\\Tests\\": "tests/"
     }
   },
   "scripts": {

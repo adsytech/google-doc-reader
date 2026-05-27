@@ -1,10 +1,10 @@
 <?php
 
-namespace Heorhiev\GoogleDocReader;
+namespace adsytech\GoogleDocReader;
 
-use Heorhiev\GoogleDocReader\Dto\GoogleDocReadResult;
-use Heorhiev\GoogleDocReader\Support\GoogleDocHtmlFetcher;
-use Heorhiev\GoogleDocReader\Support\GoogleDocHtmlSanitizer;
+use adsytech\GoogleDocReader\Dto\GoogleDocReadResult;
+use adsytech\GoogleDocReader\Support\GoogleDocHtmlFetcher;
+use adsytech\GoogleDocReader\Support\GoogleDocHtmlSanitizer;
 
 final class GoogleDocReader
 {

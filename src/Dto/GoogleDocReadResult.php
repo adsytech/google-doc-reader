@@ -1,6 +1,6 @@
 <?php
 
-namespace Heorhiev\GoogleDocReader\Dto;
+namespace adsytech\GoogleDocReader\Dto;
 
 final class GoogleDocReadResult
 {

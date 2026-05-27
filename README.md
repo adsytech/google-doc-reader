@@ -15,7 +15,7 @@ For local development, add a path repository to your project `composer.json`:
     }
   ],
   "require": {
-    "heorhiev/google-doc-reader": "dev-master"
+    "adsytech/google-doc-reader": "dev-master"
   }
 }
 ```
@@ -23,13 +23,13 @@ For local development, add a path repository to your project `composer.json`:
 Then run:
 
 ```bash
-composer update heorhiev/google-doc-reader
+composer update adsytech/google-doc-reader
 ```
 
 ## Usage
 
 ```php
-use Heorhiev\GoogleDocReader\GoogleDocReader;
+use adsytech\GoogleDocReader\GoogleDocReader;
 
 $result = GoogleDocReader::readFromUrl($googleDocUrl);
 
