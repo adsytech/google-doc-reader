@@ -1,5 +1,5 @@
 {
-  "name": "Adsytech/google-doc-reader",
+  "name": "adsytech/google-doc-reader",
   "description": "Google Docs HTML reader and sanitizer.",
   "type": "library",
   "license": "proprietary",
