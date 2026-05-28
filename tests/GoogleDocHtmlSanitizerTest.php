@@ -35,6 +35,15 @@ final class GoogleDocHtmlSanitizerTest extends TestCase
         self::assertSame('<p><strong><span style="color: #ff0000">Styled text</span></strong></p>', $result->html);
     }
 
+    public function testSanitizeRemovesBackgroundColorStyles(): void
+    {
+        $result = GoogleDocHtmlSanitizer::sanitize(
+            '<html><head><title>Doc</title><style>.c1{background-color:#ffff00;color:#ff0000}</style></head><body><p><span class="c1" style="background-color: #00ff00;">Highlighted text</span></p></body></html>'
+        );
+
+        self::assertSame('<p><span style="color: #ff0000">Highlighted text</span></p>', $result->html);
+    }
+
     public function testSanitizeRemovesEmptyAnchorWithWhitespaceOnly(): void
     {
         $result = GoogleDocHtmlSanitizer::sanitize(

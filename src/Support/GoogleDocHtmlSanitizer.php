@@ -325,6 +325,8 @@ final class GoogleDocHtmlSanitizer
             unset($styleMap['color']);
         }
 
+        unset($styleMap['background-color']);
+
         self::removeDefaultInlineStyles($styleMap);
 
         return $styleMap;
